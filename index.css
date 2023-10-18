@@ -1,0 +1,50 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  background-color: beige;
+  border: 4px solid black;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-radius: 10px;
+}
+.cardwrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.kundvagn {
+  width: 50%;
+  height: 50%;
+}
+#input-field {
+  width: 80%;
+  height: 35px;
+  border-radius: 10px;
+  font-size: 22px;
+  padding: 2px;
+  margin: 10px 0px;
+  border: 2px solid black;
+  background-color: rgb(35, 159, 201);
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#add-button {
+  cursor: pointer;
+  width: 80%;
+  padding: 2px;
+  height: 35px;
+  border-radius: 10px;
+  font-size: 22px;
+  border: 2px solid black;
+  background-color: pink;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
