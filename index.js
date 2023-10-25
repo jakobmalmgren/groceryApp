@@ -1,27 +1,3 @@
-// import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-// import {
-//   getDatabase,
-//   ref,
-//   push,
-// } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
-
-// const appSettings = {
-//   databaseUrl:
-//     "https://realtime-database-a0b56-default-rtdb.europe-west1.firebasedatabase.app/",
-// };
-// const app = initializeApp(appSettings);
-// const database = getDatabase(app);
-// const shoppingListInDb = ref(database, "shoppingList");
-
-// const input = document.getElementById("input-field");
-// const button = document.getElementById("add-button");
-// button.addEventListener("click", value);
-// function value() {
-//   let inputValue = input.value;
-//   push(shoppingListInDb, inputValue);
-//   console.log(inputValue);
-// }
-
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
 import {
   getDatabase,
@@ -77,6 +53,7 @@ function addProducts(value) {
   let itemId = value[0];
   let itemValue = value[1];
   let newEl = document.createElement("li");
+
   newEl.textContent = itemValue;
   shoppingListEl.append(newEl);
   newEl.addEventListener("click", function () {
